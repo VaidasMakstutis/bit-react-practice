@@ -6,7 +6,7 @@ const consoleItems = (data) => {
     for (let item of data) {
         for (let key in item) {
            let liElement = document.createElement('li');
-           liElement.textContent = `Preke:${key}-Reikšmė:"${item[key]}`;
+           liElement.textContent = `Preke : ${key}-Reikšmė : "${item[key]}`;
            document.querySelector('ul').appendChild(liElement)
         }
     }

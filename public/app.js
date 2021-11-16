@@ -46,7 +46,7 @@ var consoleItems = function consoleItems(data) {
 
       for (var key in item) {
         var liElement = document.createElement('li');
-        liElement.textContent = "Preke:".concat(key, "-Reik\u0161m\u0117:\"").concat(item[key]);
+        liElement.textContent = "Preke : ".concat(key, "-Reik\u0161m\u0117 : \"").concat(item[key]);
         document.querySelector('ul').appendChild(liElement);
       }
     }
