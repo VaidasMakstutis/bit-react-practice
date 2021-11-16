@@ -34,6 +34,9 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 var consoleItems = function consoleItems(data) {
+  var ulElement = document.createElement('ul');
+  document.querySelector('.container').appendChild(ulElement);
+
   var _iterator = _createForOfIteratorHelper(data),
       _step;
 
@@ -42,7 +45,9 @@ var consoleItems = function consoleItems(data) {
       var item = _step.value;
 
       for (var key in item) {
-        console.log(key, ":", item[key]);
+        var liElement = document.createElement('li');
+        liElement.textContent = "Preke:".concat(key, "-Reik\u0161m\u0117:\"").concat(item[key]);
+        document.querySelector('ul').appendChild(liElement);
       }
     }
   } catch (err) {
