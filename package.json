@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/VaidasMakstutis/bit-react-practice#readme",
   "dependencies": {
-    "bootstrap": "^4.6.0"
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "laravel-mix": "^6.0.39",
